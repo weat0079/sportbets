@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev server</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="images/common/logotype.svg" alt="Outlier">
+                </a>
+            </div>
+            
+            <div class="main-nav">
+                <a href="#features">Features</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#positive-ev">Positive EV</a>
+                <a href="#education">Education</a>
+                <a href="#merch">Merch</a>
+                <a href="#press">Press</a>
+            </div>
+
+            <a href="/dashboard" class="start-betting">Start betting</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-background">
+                <img src="images/hero/grid.svg" alt="" class="bg-grid">
+                <img src="images/hero/blur-1.svg" alt="" class="bg-blur-1">
+                <img src="images/hero/blur-2.svg" alt="" class="bg-blur-2">
+                <img src="images/hero/blur-3.svg" alt="" class="bg-blur-3">
+                <img src="images/hero/illstr1.png" alt="" class="bg-illstr1">
+                <img src="images/hero/illstr2.png" alt="" class="bg-illstr2">
+            </div>
+            <div class="hero-content">
+                <h1>Make Smarter Bets.<br>No Matter the Sportsbook.</h1>
+                <p>Browse, analyze, and execute picks on major<br>sportsbooks. All in one place.</p>
+                <button class="find-bet">Find your next bet</button>
+                <div class="quick-links">
+                    <a href="#nba">nba player props today</a>
+                    <span class="separator">•</span>
+                    <a href="#nba">nba spread stats and results</a>
+                </div>
+            </div>
+            <div class="hero-images">
+                <div class="dashboard-preview">
+                    <img src="images/common/devices/tablet.png" alt="Platform Dashboard">
+                    <div class="gradient-overlay"></div>
+                </div>
+                <div class="mobile-preview">
+                    <img src="images/common/devices/phone.png" alt="Mobile App">
+                    <div class="gradient-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sportsbooks">
+            <h2>Integrated with your favorite sportsbooks<br>to place bets faster than ever</h2>
+            <div class="sportsbook-grid">
+                <img src="images/espnbet.svg" alt="ESPN Bet">
+                <img src="images/betgmg.svg" alt="BetMGM">
+                <img src="images/caesar.svg" alt="Caesars">
+                <img src="images/prizepicks.svg" alt="PrizePicks">
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews-header">
+                <h2>The community has spoken</h2>
+                <div class="rating-summary">
+                    <div class="stars">★★★★★</div>
+                    <div class="rating-info">
+                        <span class="rating-score">4.9</span>
+                        <span class="review-count">reviews</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="John D." class="reviewer-avatar">
+                        <div class="reviewer-info">
+                            <h4>John D.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Game-changing platform. The EV finder alone is worth the subscription."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Mike R." class="reviewer-avatar">
+                        <div class="reviewer-info">
+                            <h4>Mike R.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Best sports betting tool I've used. Already made my money back multiple times over."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/150?img=23" alt="Sarah L." class="reviewer-avatar">
+                        <div class="reviewer-info">
+                            <h4>Sarah L.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The data visualizations and insights have completely changed how I approach betting."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/150?img=53" alt="Alex P." class="reviewer-avatar">
+                        <div class="reviewer-info">
+                            <h4>Alex P.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The arbitrage finder has been incredible. Found multiple opportunities daily."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/150?img=65" alt="Ryan K." class="reviewer-avatar">
+                        <div class="reviewer-info">
+                            <h4>Ryan K.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Pro features are worth every penny. The EV calculations are spot on."</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://i.pravatar.cc/150?img=45" alt="Emma T." class="reviewer-avatar">
+                        <div class="reviewer-info">
+                            <h4>Emma T.</h4>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Love how easy it is to compare odds across different sportsbooks."</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing">
+            <div class="pricing-header">
+                <h2>Which plan is right for you?</h2>
+                <p>Our sports betting research platform will make you a smarter, more efficient, and more confident bettor.<br>
+                Get started with a 7 day free trial to all our tools.</p>
+            </div>
+            <div class="pricing-toggle">
+                <div class="toggle-wrapper">
+                    <span class="toggle-label">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billingToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="annual-label">
+                        <span class="toggle-label">Annual</span>
+                        <img src="images/plans/save.svg" alt="Save" class="save-pointer">
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-grid">
+                <div class="plan">
+                    <h3>Premium</h3>
+                    <div class="price">$19.99/mo</div>
+                    <ul class="features-list">
+                        <li class="included">Trending Insights</li>
+                        <li class="included">Thousands of Props & Games</li>
+                        <li class="included">Advanced Data & Visuals</li>
+                        <li class="included">Odds Comparisons & Line Movement Tracking</li>
+                        <li class="included">Real-time Injury Reports</li>
+                        <li class="included">Shareable Betslips</li>
+                        <li class="excluded">Positive EV</li>
+                        <li class="excluded">Sharp Book Odds</li>
+                        <li class="excluded">Boost Analysis</li>
+                        <li class="excluded">Middle Betting</li>
+                        <li class="excluded">Arbitrage</li>
+                    </ul>
+                    <button class="trial-btn">Start free trial</button>
+                </div>
+                <div class="plan pro">
+                    <div class="badge">Most popular</div>
+                    <h3>Pro</h3>
+                    <div class="price">$129.99/mo</div>
+                    <ul class="features-list">
+                        <li class="included">Trending Insights</li>
+                        <li class="included">Thousands of Props & Games</li>
+                        <li class="included">Advanced Data & Visuals</li>
+                        <li class="included">Odds Comparisons & Line Movement Tracking</li>
+                        <li class="included">Real-time Injury Reports</li>
+                        <li class="included">Shareable Betslips</li>
+                        <li class="included">Positive EV</li>
+                        <li class="included">Sharp Book Odds</li>
+                        <li class="included">Boost Analysis</li>
+                        <li class="included">Middle Betting</li>
+                        <li class="included">Arbitrage</li>
+                    </ul>
+                    <button class="trial-btn">Lock in early bird rate</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <a href="#public">Public betting</a>
+                <a href="#trends">NBA Trends</a>
+                <a href="#calculator">Calculator</a>
+            </div>
+            <div class="footer-section">
+                <p>© 2024 Your Company. All rights reserved.</p>
+                <p>If you or someone you know has a gambling problem and wants help, call 1-800 GAMBLER.</p>
+                <div class="legal-links">
+                    <a href="#terms">Terms of use</a>
+                    <a href="#privacy">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

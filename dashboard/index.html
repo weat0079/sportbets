@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outliers Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/common/logotype.svg" alt="Outliers" class="dashboard-logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="#dashboard" class="active">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="props.html">
+                        <i class="fas fa-trophy"></i>
+                        <span>Props</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#analysis">
+                        <i class="fas fa-magnifying-glass-chart"></i>
+                        <span>Analysis</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#picks">
+                        <i class="fas fa-check-circle"></i>
+                        <span>My Picks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#history">
+                        <i class="fas fa-clock-rotate-left"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="user-section">
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/32" alt="User" class="user-avatar">
+                    <div class="user-details">
+                        <span class="user-name">John Doe</span>
+                        <span class="user-plan">Pro Plan</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="dashboard-content">
+                <div class="bg-grid"></div>
+                <div class="bg-dots"></div>
+                <div class="bg-orb-1"></div>
+                <div class="bg-orb-2"></div>
+                <div class="ambient-light"></div>
+                <div class="dashboard-header">
+                    <div class="header-title">
+                        <div class="title-wrapper">
+                            <h1>Dashboard</h1>
+                            <div class="title-badge">Pro</div>
+                        </div>
+                        <div class="header-subtitle">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Performance Overview</span>
+                            <span class="date-range">March 2024</span>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="action-btn">
+                            <i class="fas fa-download"></i>
+                            Export Data
+                        </button>
+                        <button class="action-btn primary">
+                            <i class="fas fa-plus"></i>
+                            New Bet
+                        </button>
+                    </div>
+                </div>
+
+                <div class="quick-stats">
+                    <div class="stat-card gradient-1">
+                        <div class="stat-header">
+                            <div class="stat-icon">
+                                <i class="fas fa-arrow-trend-up"></i>
+                            </div>
+                            <div class="stat-trend positive">
+                                <i class="fas fa-caret-up"></i>
+                                15.3%
+                            </div>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Total Profit</h3>
+                            <p class="stat-value">+$1,234.56</p>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                                <span class="progress-text">75% to monthly goal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card gradient-2">
+                        <div class="stat-header">
+                            <div class="stat-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="stat-trend positive">
+                                <i class="fas fa-caret-up"></i>
+                                2.4%
+                            </div>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Win Rate</h3>
+                            <p class="stat-value">67.8%</p>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 67.8%"></div>
+                                <span class="progress-text">Above average</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card gradient-3">
+                        <div class="stat-header">
+                            <div class="stat-icon">
+                                <i class="fas fa-dice"></i>
+                            </div>
+                            <div class="stat-count">
+                                <span class="highlight">4</span> pending
+                            </div>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Active Bets</h3>
+                            <p class="stat-value">12</p>
+                            <div class="stat-progress">
+                                <div class="progress-bar" style="width: 40%"></div>
+                                <span class="progress-text">4 pending results</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="performance-section">
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <div class="chart-title">
+                                <h3>Profit History</h3>
+                                <span class="subtitle">Monthly performance tracking</span>
+                            </div>
+                            <div class="chart-actions">
+                                <button class="time-filter active">1W</button>
+                                <button class="time-filter">1M</button>
+                                <button class="time-filter">3M</button>
+                                <button class="time-filter">1Y</button>
+                                <button class="time-filter">
+                                    <i class="fas fa-calendar"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <canvas id="profitChart"></canvas>
+                    </div>
+
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <div class="chart-title">
+                                <h3>Win Rate by Prop Type</h3>
+                                <span class="subtitle">Performance analysis</span>
+                            </div>
+                            <div class="chart-actions">
+                                <button class="chart-toggle">
+                                    <i class="fas fa-chart-bar"></i>
+                                </button>
+                                <button class="chart-toggle active">
+                                    <i class="fas fa-chart-pie"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <canvas id="propTypeChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="recent-bets">
+                    <div class="recent-bets-header">
+                        <h3>Recent Bets</h3>
+                        <button class="action-btn">View All History</button>
+                    </div>
+                    <div class="bets-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date & Time</th>
+                                    <th>Player</th>
+                                    <th>Prop Details</th>
+                                    <th>Odds</th>
+                                    <th>Stake</th>
+                                    <th>Status</th>
+                                    <th>P/L</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="bet-date">
+                                            <span class="date">Mar 15, 2024</span>
+                                            <span class="time">7:30 PM ET</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="player-info">
+                                            <img src="https://cdn.nba.com/headshots/nba/latest/260x190/1628369.png" alt="Tatum" class="player-avatar">
+                                            <span>Jayson Tatum</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="prop-info">
+                                            <span class="prop-type">Points</span>
+                                            <span class="prop-line">Over 28.5</span>
+                                        </div>
+                                    </td>
+                                    <td>-110</td>
+                                    <td>$100</td>
+                                    <td><span class="status win">WIN</span></td>
+                                    <td class="profit">+$91</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="bet-date">
+                                            <span class="date">Mar 14, 2024</span>
+                                            <span class="time">10:00 PM ET</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="player-info">
+                                            <img src="https://cdn.nba.com/headshots/nba/latest/260x190/201939.png" alt="Curry" class="player-avatar">
+                                            <span>Stephen Curry</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="prop-info">
+                                            <span class="prop-type">3PT Made</span>
+                                            <span class="prop-line">Over 4.5</span>
+                                        </div>
+                                    </td>
+                                    <td>-115</td>
+                                    <td>$100</td>
+                                    <td><span class="status loss">LOSS</span></td>
+                                    <td class="loss">-$100</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="bet-date">
+                                            <span class="date">Mar 14, 2024</span>
+                                            <span class="time">8:00 PM ET</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="player-info">
+                                            <img src="https://cdn.nba.com/headshots/nba/latest/260x190/203507.png" alt="Giannis" class="player-avatar">
+                                            <span>Giannis Antetokounmpo</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="prop-info">
+                                            <span class="prop-type">Rebounds</span>
+                                            <span class="prop-line">Over 11.5</span>
+                                        </div>
+                                    </td>
+                                    <td>-108</td>
+                                    <td>$100</td>
+                                    <td><span class="status pending">LIVE</span></td>
+                                    <td class="pending">--</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html> 

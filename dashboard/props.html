@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Props - Outliers Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/common/logotype.svg" alt="Outliers" class="dashboard-logo">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="props.html" class="active">
+                        <i class="fas fa-trophy"></i>
+                        <span>Props</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#analysis">
+                        <i class="fas fa-magnifying-glass-chart"></i>
+                        <span>Analysis</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#picks">
+                        <i class="fas fa-check-circle"></i>
+                        <span>My Picks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#history">
+                        <i class="fas fa-clock-rotate-left"></i>
+                        <span>History</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="user-section">
+                <div class="user-info">
+                    <img src="https://i.pravatar.cc/32" alt="User" class="user-avatar">
+                    <div class="user-details">
+                        <span class="user-name">John Doe</span>
+                        <span class="user-plan">Pro Plan</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="props-content">
+                <!-- Background Effects -->
+                <div class="bg-grid"></div>
+                <div class="bg-dots"></div>
+                <div class="bg-orb-1"></div>
+                <div class="bg-orb-2"></div>
+                <div class="ambient-light"></div>
+
+                <!-- Props Title Section -->
+                <div class="props-title-section">
+                    <div class="title-content">
+                        <div class="title-main">
+                            <h1>Prop Explorer</h1>
+                            <div class="live-indicator">
+                                <span class="pulse"></span>
+                                <span class="live-text">Live Updates</span>
+                            </div>
+                        </div>
+                        <p class="title-description">Discover high-value props with real-time analytics and insights</p>
+                        <div class="stats-pills">
+                            <div class="stat-pill">
+                                <i class="fas fa-chart-line"></i>
+                                <span>2,457 Available Props</span>
+                            </div>
+                            <div class="stat-pill highlight">
+                                <i class="fas fa-bolt"></i>
+                                <span>142 +EV Props</span>
+                            </div>
+                            <div class="stat-pill">
+                                <i class="fas fa-clock"></i>
+                                <span>Last updated: 2 mins ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title-decoration">
+                        <div class="glow-effect"></div>
+                    </div>
+                </div>
+
+                <!-- Props Header -->
+                <div class="props-header">
+                    <div class="props-nav">
+                        <div class="sport-selector">
+                            <button class="sport-btn active">
+                                <i class="fas fa-basketball"></i>
+                                NBA
+                            </button>
+                            <button class="sport-btn">
+                                <i class="fas fa-football"></i>
+                                NFL
+                            </button>
+                            <button class="sport-btn">
+                                <i class="fas fa-baseball"></i>
+                                MLB
+                            </button>
+                        </div>
+                        <div class="prop-type-selector">
+                            <button class="prop-type-btn active">
+                                <i class="fas fa-basketball prop-icon"></i>
+                                <span class="prop-label">Points</span>
+                                <span class="prop-count">847 props</span>
+                            </button>
+                            <button class="prop-type-btn">
+                                <i class="fas fa-chart-pie prop-icon"></i>
+                                <span class="prop-label">Rebounds</span>
+                                <span class="prop-count">632 props</span>
+                            </button>
+                            <button class="prop-type-btn">
+                                <i class="fas fa-hands-helping prop-icon"></i>
+                                <span class="prop-label">Assists</span>
+                                <span class="prop-count">589 props</span>
+                            </button>
+                            <button class="prop-type-btn">
+                                <i class="fas fa-bullseye prop-icon"></i>
+                                <span class="prop-label">3PT Made</span>
+                                <span class="prop-count">423 props</span>
+                            </button>
+                            <button class="prop-type-btn">
+                                <i class="fas fa-shield-alt prop-icon"></i>
+                                <span class="prop-label">Steals + Blocks</span>
+                                <span class="prop-count">312 props</span>
+                            </button>
+                            <button class="prop-type-btn">
+                                <i class="fas fa-star prop-icon"></i>
+                                <span class="prop-label">Double-Double</span>
+                                <span class="prop-count">298 props</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Props Container -->
+                <div class="props-container">
+                    <div class="props-main">
+                        <div class="props-grid">
+                            <!-- Example Prop Card -->
+                            <div class="prop-card">
+                                <div class="prop-header">
+                                    <div class="game-info">
+                                        <span class="game-time">7:30 PM ET</span>
+                                        <span class="game-teams">BOS @ MIA</span>
+                                    </div>
+                                    <div class="prop-badges">
+                                        <div class="prop-badge ev-positive">+8.4% EV</div>
+                                        <div class="prop-badge hot-streak">🔥 Hot</div>
+                                    </div>
+                                </div>
+                                <div class="prop-content">
+                                    <div class="player-info">
+                                        <img src="https://cdn.nba.com/headshots/nba/latest/260x190/1628369.png" alt="Jayson Tatum" class="player-image">
+                                        <div class="player-details">
+                                            <span class="player-name">Jayson Tatum</span>
+                                            <span class="prop-detail">Points Over 28.5 (-110)</span>
+                                        </div>
+                                    </div>
+                                    <div class="prop-insights">
+                                        <div class="insight-row">
+                                            <span class="insight-label">Last 5 Games</span>
+                                            <span class="insight-trend positive">+2.7%</span>
+                                            <span class="insight-value">31.2</span>
+                                        </div>
+                                        <div class="insight-row">
+                                            <span class="insight-label">vs MIA (3 games)</span>
+                                            <span class="insight-trend positive">+4.9%</span>
+                                            <span class="insight-value">33.4</span>
+                                        </div>
+                                        <div class="insight-row">
+                                            <span class="insight-label">Away Games</span>
+                                            <span class="insight-trend positive">+1.3%</span>
+                                            <span class="insight-value">29.8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="prop-actions">
+                                    <div class="sportsbooks">
+                                        <img src="../images/fanduel.svg" alt="FanDuel">
+                                        <img src="../images/prizepicks.svg" alt="PrizePicks">
+                                    </div>
+                                    <button class="analyze-btn">
+                                        <i class="fas fa-chart-line"></i>
+                                        Analysis
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Repeat for more prop cards -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html> 
